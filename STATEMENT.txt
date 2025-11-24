@@ -1,0 +1,34 @@
+Project Title: Spam Email/SMS Classifier Using Python and Machine Learning
+
+Declaration:
+I declare that this project is my own work. The code and explanation are prepared by me for learning purpose. 
+Wherever I used any reference or sample, I have tried to understand it first and then write it in my own words. 
+I follow the rules of academic honesty and I have not copied the project directly from any source.
+
+Project Summary:
+This project is about identifying whether a message is “Spam” or “Ham” (Not Spam).  
+The program uses a dataset of messages and applies simple machine learning techniques to classify them.
+
+Steps done in this project:
+1. Loaded the dataset (CSV file). If no file is present, the program uses a small sample dataset.
+2. Cleaned the data and converted the text messages into numerical form using TF-IDF.
+3. Trained a Multinomial Naive Bayes model, which works well for text classification.
+4. Evaluated the model by checking accuracy, precision, recall, F1-score, and confusion matrix.
+5. Tested the model on new example messages and saved the model using joblib.
+
+How to Run the Project:
+1. Install the required libraries:
+   pip install pandas scikit-learn joblib
+2. Run the script:
+   python spam_classifier.py
+3. If you want, you can also add your own dataset named spam_data.csv.
+
+Files Included:
+spam_classifier.py
+spam_data.csv 
+README.md
+STATEMENT.txt
+spam_nb_model.joblib (generated after training)
+tfidf_vectorizer.joblib (generated after training)
+
+
