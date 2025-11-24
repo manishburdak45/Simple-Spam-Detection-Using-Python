@@ -1,34 +1,111 @@
-Project Title: Spam Email/SMS Classifier Using Python and Machine Learning
+PROJECT STATEMENT  
+Spam Email/SMS Classifier Using Python and Machine Learning
 
-Declaration:
-I declare that this project is my own work. The code and explanation are prepared by me for learning purpose. 
-Wherever I used any reference or sample, I have tried to understand it first and then write it in my own words. 
-I follow the rules of academic honesty and I have not copied the project directly from any source.
+Student Name       : Manish Burdak  
+Registration No.   : 25BCY10222  
+College            : VIT Bhopal University  
+Course/Subject     : Fundamentals of AI and ML 
 
-Project Summary:
-This project is about identifying whether a message is “Spam” or “Ham” (Not Spam).  
-The program uses a dataset of messages and applies simple machine learning techniques to classify them.
 
-Steps done in this project:
-1. Loaded the dataset (CSV file). If no file is present, the program uses a small sample dataset.
-2. Cleaned the data and converted the text messages into numerical form using TF-IDF.
-3. Trained a Multinomial Naive Bayes model, which works well for text classification.
-4. Evaluated the model by checking accuracy, precision, recall, F1-score, and confusion matrix.
-5. Tested the model on new example messages and saved the model using joblib.
 
-How to Run the Project:
-1. Install the required libraries:
-   pip install pandas scikit-learn joblib
-2. Run the script:
-   python spam_classifier.py
-3. If you want, you can also add your own dataset named spam_data.csv.
+1. Declaration
 
-Files Included:
-spam_classifier.py
-spam_data.csv 
-README.md
-STATEMENT.txt
-spam_nb_model.joblib (generated after training)
-tfidf_vectorizer.joblib (generated after training)
+I, Manish Burdak, declare that the project titled *“Spam Email/SMS Classifier using Python and Machine Learning”* is my own work.  
+I have prepared this project for my academic learning and practical understanding of text classification.  
+The code and explanation written in this project are done by me, and wherever any reference was used, I have tried to understand it properly before writing it in my own words.
+
+I fully understand the rules of academic honesty and plagiarism.  
+This project is created only for educational purposes, and no part of it has been copied directly from any online source or another student’s work.
+
+
+2. Project Overview
+
+The purpose of this project is to classify text messages into two categories:
+Spam  
+Ham (Not Spam)
+
+For this, I have used Python and basic machine learning techniques.  
+The main concept of the project is to take raw text messages, process them, and use a trained model to predict whether the message is harmful junk content (spam) or a normal message.
+
+This project helped me understand how machine learning can be applied in real-life tasks such as email filtering, SMS blocking, and secure communication.
+
+
+3. Learning Objective
+
+The main learning objectives of this project are:
+- Understanding how to clean and preprocess text data
+- Learning how TF-IDF converts text into numeric vectors
+- Understanding Naive Bayes classification
+- Learning how to train, test, and evaluate a machine learning model
+- Understanding accuracy, precision, recall, F1-score, and confusion matrix
+- Learning how to predict new messages using a trained model
+
+These objectives helped me build a strong base in machine learning and natural language processing.
+
+
+4. Tools and Technologies Used
+
+The following tools and technologies were used in this project:
+Python programming language  
+Pandas (for data handling)  
+Scikit-learn (for model training and evaluation)  
+TF-IDF Vectorizer  
+Multinomial Naive Bayes classifier  
+Joblib (for saving the model)  
+VS Code IDE (for writing and running the code)
+
+These tools helped in building a clean and simple machine learning workflow.
+
+
+5. Methodology / Steps Followed
+
+The project followed the below steps:
+
+1. Loading the dataset (spam_data.csv)  
+2. Handling missing data and cleaning labels  
+3. Splitting data into training and testing sets  
+4. Converting messages into TF-IDF numeric vectors  
+5. Training the Naive Bayes classifier  
+6. Evaluating the model with accuracy and classification report  
+7. Predicting new messages  
+8. Saving the trained model and TF-IDF vectorizer  
+9. Testing the model with custom examples  
+
+These steps represent a complete machine learning pipeline.
+
+
+6. Results and Discussion
+
+After training the model, I tested it on the test data.  
+The model showed good accuracy depending on the dataset used.  
+The confusion matrix also showed that the classifier was able to correctly identify most spam and ham messages.  
+The project demonstrates that even simple models like Naive Bayes work well for text classification.
+
+I also tested some new messages like:  
+- “Congratulations! You won a free phone!” → SPAM  
+- “Hey bro, what’s up?” → HAM  
+
+The model gave correct predictions and showed useful results.
+
+
+7. Conclusion
+
+This project was very helpful for understanding the basics of machine learning, especially Natural Language Processing (NLP).  
+I learned how real-world problems like spam filtering are solved using simple algorithms.  
+Working on this project increased my confidence in Python, data preprocessing, and ML model building.
+
+The project can be improved by using a bigger dataset, adding more text cleaning techniques, or using more advanced algorithms like Logistic Regression or SVM.
+
+
+8. Files Included
+
+The following files are included in the project submission:
+spam_classifier.py  
+spam_data.csv (optional dataset)  
+spam_nb_model.joblib  
+tfidf_vectorizer.joblib  
+README.md  
+STATEMENT.txt  
+
 
 
